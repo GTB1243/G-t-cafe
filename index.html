@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header>
+        <div class="header-logo">
+            
+            <h1>Cafeteria Gato Café</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="Untitled-3.html" target="_blank" rel="external">Sobre</a></li>
+                <li><a href="Untitled-1.html" target="_blank">Menu</a></li>
+                <li><a href="#adocao">Adoção</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal com Imagem -->
+    <section id="home">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/46/cb/c0/caption.jpg?w=1200&h=-1&s=1" alt="Gatos no Café" class="imagem-destaque">
+        <p>Relaxe com gatos fofos enquanto saboreia um delicioso café!</p>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O Gato Café é um espaço único onde você pode interagir com gatos resgatados enquanto aprecia suas bebidas favoritas.</p>
+        <p>Missão: Promover o bem-estar dos gatos e incentivar a adoção responsável.</p>
+    </section>
+
+    <!-- Seção Menu -->
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <ul>
+            <li>Café Espresso - R$5,00</li>
+            <li>Cappuccino - R$8,00</li>
+            <li>Bolo de Cenoura - R$6,00</li>
+            <li>Sanduíche Vegano - R$10,00</li>
+        </ul>
+    </section>
+
+    <!-- Seção Adoção -->
+    <section id="adocao">
+        <h2>Adoção de Gatos</h2>
+        <p>Conheça alguns dos nossos amigos felinos que estão procurando um lar:</p>
+        <div class="gato">
+            <img src="https://assets.leetcode.com/users/avatars/avatar_1662569385.png" alt="Gato para adoção">
+            <p><strong>Nome:</strong> Miau</p>
+            <p><strong> Idade:</strong> 2 anos</p>
+        </div>
+        <div class="gato">
+            <img src="https://olhardigital.com.br/wp-content/uploads/2024/09/gato-1024x1024.png" alt="Gato para adoção">
+            <p><strong>Nome:</strong> Peludo</p>
+            <p><strong> Idade:</strong> 3 anos</p>
+        </div>
+    </section>
+
+    <!-- Seção Reservas -->
+    <section id="reservas">
+        <h2>Faça sua Reserva</h2>
+        <form action="reservar.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="data">Data da visita:</label>
+            <input type="date" id="data" name="data" required>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Endereço: Rua Teresa-365, 123, GatoVille</p>
+        <p>Email: contato@gatocafe.com</p>
+        <p>Telefone: (92) 9290-3499</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Gato Café - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

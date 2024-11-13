@@ -1,0 +1,222 @@
+/* Global */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f4f0; /* Tom suave e claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3e2723;
+    background-size: cover; /* Garante que a imagem cubra todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necessário para posicionar a logo */
+}
+
+h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 95px;
+    margin-bottom: 30px;
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Principal */
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #160503;
+    margin-bottom: 20px;
+}
+
+/* Estilização para itens de lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Seção de Adoção de Gatos */
+.gato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gato img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Formulário de Reservas */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+button {
+    background-color: #160503;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4b0082;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #160503;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Parágrafos */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
+/* Para telas pequenas (celulares e dispositivos com largura menor que 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 60px; /* Tamanho do título menor em telas pequenas */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .gato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gato img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Para telas muito pequenas (smartphones em modo retrato, abaixo de 480px) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px 5px;
+    }
+
+    h1 {
+        font-size: 45px; /* Tamanho do título ainda menor */
+    }
+
+    nav ul li a {
+        font-size: 1.3em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .gato img {
+        width: 80px;
+        height: 80px; /* Imagens menores em telas pequenas */
+    }
+}
+/* Definir a animação de slide-in */
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px); /* Começa 50px abaixo */
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        transform: translateY(0); /* Move para sua posição normal */
+        opacity: 1; /* Torna o conteúdo visível */
+    }
+}
+
+/* Aplicar a animação ao body */
+body {
+    animation: slideIn 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Media Queries para responsividade */
